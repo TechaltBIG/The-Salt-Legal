@@ -34,7 +34,7 @@ function Package() {
       handler: async (response) => {
         try {
           const verifyUrl =
-            "https://the-salt-legal-backend.onrender.com/verify";
+            "https://the-salt-legal-backend-rl7d.onrender.com/verify";
           const { data } = await axios.post(verifyUrl, response);
           console.log("verifyData", data);
           if (data.status) {
@@ -69,7 +69,7 @@ function Package() {
           navigate("/category-pay");
         } else {
           console.log("Initiating payment process.");
-          const orderUrl = "https://the-salt-legal-backend.onrender.com/orders";
+          const orderUrl = "https://the-salt-legal-backend-rl7d.onrender.com/orders";
           const { data } = await axios.post(orderUrl, {
             amount: book.price,
           });
