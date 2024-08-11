@@ -62,7 +62,7 @@ function Login() {
   const handleLogin = async () => {
     try {
       const response = await fetch(
-        "https://the-salt-legal-backend.onrender.com/login",
+        "https://the-salt-legal-backend-rl7d.onrender.com/login",
         {
           method: "POST",
           headers: {
