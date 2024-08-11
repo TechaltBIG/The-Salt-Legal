@@ -30,18 +30,11 @@ function Features() {
                   alignItems: "center",
                 }}
               >
-                <CardMedia>
+                <CardMedia className="img-size-1">
                   <img src={item.img} style={{ width: "80px" }} />
                 </CardMedia>
 
                 <div className="feature-card-style-1">
-                  {/* <hr
-                  style={{
-                   
-                    backgroundColor: "gray",
-                    height: '2px',width:'180px'
-                  }}
-                /> */}
                   <Typography
                     variant="h6"
                     component="h2"
@@ -50,13 +43,6 @@ function Features() {
                   >
                     {item.description}
                   </Typography>
-                  {/* <hr
-                    style={{
-                      backgroundColor: "gray",
-                      height: "2px",
-                      width: "180px",
-                    }}
-                  /> */}
                 </div>
               </div>
             </CardContent>

@@ -77,9 +77,9 @@ const Navbar = () => {
           <li>
             <Link onClick={scrollToDocs}>Templates</Link>
           </li>
-          <li>
+          {/* <li>
             <Link onClick={scrollToNewsletter}>Newsletters</Link>
-          </li>
+          </li> */}
           <li>
             <Link onClick={scrollToAbout}>About</Link>
           </li>
@@ -88,10 +88,18 @@ const Navbar = () => {
               Contact Us
             </Link>
           </li>
+          <li className="btn-stl-2" style={{ paddingLeft: "50px" }}>
+            <button
+              onClick={() => navigate("/category-pay")}
+              style={{ width: "150px" }}
+            >
+              My Templates
+            </button>
+          </li>
           {authUser ? (
             <Logout />
           ) : (
-            <li className="btn-stl-2" style={{ paddingLeft: "50px" }}>
+            <li className="btn-stl-2">
               <button onClick={() => navigate("/login")}>Sign In</button>
             </li>
           )}

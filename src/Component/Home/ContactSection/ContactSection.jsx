@@ -82,9 +82,9 @@ export default function ContactSection() {
         <h2 className="text-cnt">
           <span>Let's Connect !</span>{" "}
         </h2>
-        <div className="flex p-4">
+        <div className="flex p-4 card-aligns">
           {/* Left Side - Buttons */}
-          <div className="w-full md:w-1/3 p-4 ">
+          <div className="w-full md:w-1/3 p-4 wid-80">
             <div className="p-4 rounded-lg shadow-inner shadow-pink-100">
               <h2 className="text-xl font-bold mb-4">Contact Details</h2>
               <p style={{ paddingBottom: "30px" }}>
@@ -141,7 +141,7 @@ export default function ContactSection() {
           </div>
 
           {/* Right Side - Contact Form */}
-          <div className="w-full md:w-2/3 p-4">
+          <div className="w-full md:w-2/3 p-4 wid-80">
             <div className="font-bold text-center text-white bg-slate-800 px-5 py-4 rounded-lg ">
               Contact Form
             </div>

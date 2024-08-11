@@ -29,7 +29,6 @@ function Document() {
   };
 
   const storage = getStorage();
-  console.log(`Nitin String ${storage}`);
 
   useEffect(() => {
     fetchUploadedImages();

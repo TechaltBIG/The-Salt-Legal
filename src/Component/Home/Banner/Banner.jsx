@@ -1,7 +1,6 @@
 import React from "react";
 import "./Banner.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useNavigate, useLocation } from "react-router-dom";
 import {
   faDownLong,
   faDownload,
@@ -13,12 +12,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 function Banner() {
-  const navigate = useNavigate();
-
-  const handleDownload = () => {
-    navigate("/package");
-  };
-
   const scrollToDocument = () => {
     const DocumentSection = document.getElementById("DocSection");
     if (DocumentSection) {
@@ -39,9 +32,18 @@ function Banner() {
         </div>
 
         <div className="banner-search">
-          <div class="center-button-2">
-            <button onClick={handleDownload}>Get Started Now</button>
+          {/* <div className="flex bg-white rounded-full mx-auto  p-4 "> */}
+          <div className="banner-search1">
+            <FontAwesomeIcon
+              icon={faSearch}
+              // style={{position:'absolute', alignItems:'center', color:'gray'}}
+              className="search-icon"
+              size="xl"
+            />
+            <input name="search" placeholder="Legal, Marketing Templates" />
           </div>
+
+          <button onClick={scrollToDocument}>Search</button>
         </div>
 
         <div className="download-div">
