@@ -55,7 +55,7 @@ const Navbar = () => {
     <>
       <header className="header">
         <a href="#" className="logo">
-          <img className="logo-stl" src="../../src/assets/TSL-logo-new.png" />
+          <img className="logo-stl" src="../../src/assets/TSLlogonew.png" />
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" for="menu-btn">
