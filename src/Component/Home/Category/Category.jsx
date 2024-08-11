@@ -49,7 +49,7 @@ function Category() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://the-salt-legal-backend.onrender.com/get/category"
+          "https://the-salt-legal-backend-rl7d.onrender.com/get/category"
         );
         if (response.ok) {
           const data = await response.json();
