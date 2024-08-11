@@ -31,7 +31,7 @@ function Package() {
       handler: async (response) => {
         try {
           console.log("dataishere", jwtToken, userId);
-          const verifyUrl = `https://the-salt-legal-backend.onrender.com/verify/${userId}/${cardId}`;
+          const verifyUrl = `https://the-salt-legal-backend-rl7d.onrender.com/verify/${userId}/${cardId}`;
           const token = jwtToken;
 
           const headers = {
@@ -58,7 +58,7 @@ function Package() {
       if (jwtToken) {
         console.log(jwtToken);
         console.log("order payment");
-        const orderUrl = "https://the-salt-legal-backend.onrender.com/orders";
+        const orderUrl = "https://the-salt-legal-backend-rl7d.onrender.com/orders";
         const { data } = await axios.post(orderUrl, {
           cardId: id,
         });
@@ -75,7 +75,7 @@ function Package() {
   const getCardDetails = async () => {
     try {
       const response = await fetch(
-        "https://the-salt-legal-backend.onrender.com/getPaymentCard"
+        "https://the-salt-legal-backend-rl7d.onrender.com/getPaymentCard"
       );
       if (!response.ok) {
         throw new Error("Failed to fetch data");
