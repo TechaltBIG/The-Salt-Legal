@@ -54,7 +54,7 @@ function SignUp() {
      
 
       const response = await fetch(
-        "https://the-salt-legal-backend.onrender.com/register",
+        "https://the-salt-legal-backend-rl7d.onrender.com/register",
         {
           method: "POST",
           headers: {
