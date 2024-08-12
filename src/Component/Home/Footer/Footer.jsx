@@ -1,5 +1,3 @@
-// Footer.js
-
 import React from "react";
 // import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,6 +20,48 @@ import { Link, useNavigate } from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate();
 
+  const scrollToNewsletter = () => {
+    const newsSection = document.getElementById("newsLetter");
+    if (newsSection) {
+      newsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollTocontactform = () => {
+    const contactformSection = document.getElementById("contactform");
+    if (contactformSection) {
+      contactformSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToAbout = () => {
+    const aboutUsSection = document.getElementById("aboutUs");
+    if (aboutUsSection) {
+      aboutUsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToCategory = () => {
+    const categorySection = document.getElementById("Categories");
+    if (categorySection) {
+      categorySection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToDocs = () => {
+    const DocsSection = document.getElementById("DocSection");
+    if (DocsSection) {
+      DocsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToPackage = () => {
+    const PackageSection = document.getElementById("packageSection");
+    if (PackageSection) {
+      PackageSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div class="footer">
       <div class="footer-content">
@@ -40,19 +80,16 @@ const Footer = () => {
               <a href="/">Home</a>
             </li>
             <li>
-              <a onClick={() => navigate("#")}>Features</a>
+              <a onClick={scrollToCategory}>Features</a>
             </li>
             <li>
-              <a onClick={() => navigate("#")}>Packages</a>
+              <a onClick={scrollToPackage}>Packages</a>
             </li>
             <li>
-              <a onClick={() => navigate("#")}>Templates</a>
+              <a onClick={scrollToDocs}>Templates</a>
             </li>
             <li>
-              <a onClick={() => navigate("#")}>About</a>
-            </li>
-            <li>
-              <a onClick={() => navigate("#")}>Contact</a>
+              <a onClick={scrollToNewsletter}>Newsletters</a>
             </li>
           </ul>
         </div>
@@ -60,22 +97,19 @@ const Footer = () => {
           <h3 class="footer-heading">CONNECT WITH US</h3>
           <ul class="footer-links">
             <li>
-              <a onClick={() => navigate("#")}>Login</a>
+              <a onClick={() => navigate("/login")}>Login</a>
             </li>
             <li>
-              <a onClick={() => navigate("#")}>Register</a>
+              <a onClick={() => navigate("/register")}>Register</a>
             </li>
             <li>
-              <a onClick={() => navigate("#")}>About</a>
+              <a onClick={scrollToCategory}>Category</a>
             </li>
             <li>
-              <a onClick={() => navigate("#")}>Templates</a>
+              <a onClick={scrollToAbout}>About</a>
             </li>
             <li>
-              <a onClick={() => navigate("#")}>Newsletters</a>
-            </li>
-            <li>
-              <a onClick={() => navigate("#")}>Packages</a>
+              <a onClick={scrollTocontactform}>Contact</a>
             </li>
           </ul>
         </div>
