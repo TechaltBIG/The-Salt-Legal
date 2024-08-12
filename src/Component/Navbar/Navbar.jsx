@@ -4,6 +4,7 @@ import "../../assets/css/responsive.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthProvider.jsx";
 import Logout from "../Logout.jsx";
+import L1 from "../../assets/TSLlogonew.png"
 
 const Navbar = () => {
   const [authUser, setAuthUser] = useAuth();
@@ -55,7 +56,7 @@ const Navbar = () => {
     <>
       <header className="header">
         <a href="#" className="logo">
-          <img className="logo-stl" src="https://the-salt-legal-git-main-tech-altbigs-projects.vercel.app/assets/logo-VxsrYFLh.webp" />
+          <img className="logo-stl" src={L1} />
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" for="menu-btn">
